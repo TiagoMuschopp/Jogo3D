@@ -1,0 +1,63 @@
+body{
+    overflow: hidden;
+    margin: 0;
+}
+/* Tela do jogo */
+.display{
+    background: rgb(147, 147, 255);
+    width: 100%;
+    height: 650px;
+
+}
+.jogador{
+    display: inline-block;
+    position: relative;
+    right: "";
+    width: 510px;
+    height: 565px;
+    background-image: url(img/player.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: flutua 2s infinite;
+}
+.frente{
+    width: 510px;
+    height: 572px;
+    background-image: url(img/playerf.png);
+    background-repeat: no-repeat;
+    background-position: -383px;
+}
+.atras{
+    width: 540px;
+    height: 572px;
+    background-image: url(img/playera.png);
+    background-repeat: no-repeat;
+    background-position: -10rem;
+}
+.acima{
+    width: 510px;
+    height: 572px;
+    background-image: url(img/player.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arma{
+    position: absolute;
+    background: #e10909e0;
+    left: 0px;
+    border-radius: 10px;
+    transform: translate(330px, 125px);
+    width: 72px;
+    height: 11px;
+}
+@keyframes  flutua{
+    10%{
+        background-position-y: 5px;
+    }
+    20%{
+        background-position-y: 0px; 
+    }
+    80%{
+        background-position-y:0px;   
+    }
+}
